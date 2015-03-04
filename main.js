@@ -11,7 +11,8 @@ $(document).ready(function(){
 
   $('#myForm').on('submit', function(e){
     e.preventDefault();
-    $('#myInput').append($('<li>').text($('myInput').val()));
+    $('#myList').append($('<li>').text($('#myInput').val()));
+    $('#myInput').val("");
   });
 
 });
