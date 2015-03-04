@@ -15,6 +15,10 @@ $(document).ready(function(){
     $('#myInput').val("");
   });
 
+  $('#upsideDown').on('click', function(){
+    $('body').css("transform", "scaleY(-1)");
+  });
+
 });
 
 
