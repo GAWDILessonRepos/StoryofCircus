@@ -9,7 +9,8 @@ $(document).ready(function(){
     $('body').css("color", "red");
   });
 
-  $('#myForm').on('submit', function(){
+  $('#myForm').on('submit', function(e){
+    e.preventDefault();
     $('#myInput').append($('<li>').text($('myInput').val()));
   });
 
